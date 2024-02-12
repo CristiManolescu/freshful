@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

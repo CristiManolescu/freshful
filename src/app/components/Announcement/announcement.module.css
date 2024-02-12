@@ -1,0 +1,14 @@
+.announcement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #008000;
+  color: #ffffff;
+}
+
+.button {
+  display: flex;
+  position: fixed;
+  right: 15px;
+}
