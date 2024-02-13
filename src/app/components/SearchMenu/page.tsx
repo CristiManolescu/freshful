@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { logo } from "@/app/utils/contants";
-import styles from "./searchmenu.module.css";
+import styles from "./searchMenu.module.css";
 import SearchBar from "../SearchBar/page";
 
 const SearchMenu = () => {

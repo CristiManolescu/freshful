@@ -1,11 +1,11 @@
 import React from "react";
-import Carousel from "../Carousel/page";
+import ImagesCarousel from "../ImagesCarousel/page";
 import Offers from "../Offers/page";
 
 const Promotions = () => {
   return (
     <div>
-      <Carousel />
+      <ImagesCarousel />
       <Offers />
     </div>
   );

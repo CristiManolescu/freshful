@@ -1,4 +1,4 @@
-import styles from "./searchbar.module.css";
+import styles from "./searchBar.module.css";
 import { IoSearchOutline } from "react-icons/io5";
 
 const SearchBar = () => {
