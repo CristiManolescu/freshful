@@ -11,14 +11,14 @@ import Image from "next/image";
 const ImagesCarousel = () => {
   useCarousel();
   const banners = useAppSelector((store) => store.carousel.banners);
-  console.log(banners);
+  // console.log(banners);
 
   return (
     <div className={styles.carousel}>
-      <Carousel>
+      <Carousel className={styles.carousel}>
         {banners.map((banner) => (
           <Image
-            key={banner.image.default}
+            key={banner.analyticsListId}
             src={banner.image.default}
             alt="banner"
             width="925"

@@ -1,0 +1,33 @@
+.menu {
+  width: 346px;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  border: solid;
+  border-color: #404040;
+  border-radius: 10px;
+  border-width: thin;
+  padding: 5px;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.data {
+  margin: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.hr {
+  border-top: 1px solid #c0c0c0;
+}
+
+.dates {
+  font-weight: bold;
+  font-size: 12px;
+  color: #c0c0c0;
+}

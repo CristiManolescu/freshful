@@ -4,6 +4,7 @@ import announceSlice from "./announceSlice";
 import buttonsMenuSlice from "./buttonsMenuSlice";
 import menuSlice from "./menuSlice";
 import carouselSlice from "./carouselSlice";
+import offersSlice from "./offersSlice";
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     menuButton: buttonsMenuSlice,
     menu: menuSlice,
     carousel: carouselSlice,
+    offer: offersSlice,
   },
 });
 

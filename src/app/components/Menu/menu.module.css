@@ -1,8 +1,15 @@
 .list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   list-style: none;
+  padding-right: 15px;
+  padding-left: 0px;
+  margin-left: 40px;
+  margin-top: 0px;
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  gap: 15px;
 }
 
 .listItems {

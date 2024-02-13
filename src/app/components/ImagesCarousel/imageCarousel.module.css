@@ -1,3 +1,7 @@
 .carousel {
   width: 700px;
 }
+
+.carousel {
+  border-radius: 15px;
+}

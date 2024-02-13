@@ -6,7 +6,7 @@
 }
 
 .product {
-  border: #f5f5f5;
+  border-color: #f5f5f5;
   border-style: solid;
   border-width: thin;
   border-top-left-radius: 5px;
