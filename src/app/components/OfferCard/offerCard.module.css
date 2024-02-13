@@ -1,13 +1,13 @@
 .menu {
-  width: 346px;
+  width: 356px;
   height: 148px;
   display: flex;
   align-items: center;
-  border: solid;
-  border-color: #404040;
   border-radius: 10px;
   border-width: thin;
-  padding: 5px;
+  padding: 10px;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
 }
 
 .image {
@@ -28,6 +28,6 @@
 
 .dates {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 8px;
   color: #c0c0c0;
 }
