@@ -25,7 +25,7 @@ const carouselSlice = createSlice({
   initialState,
   reducers: {
     addBanners: (state, action: PayloadAction<BannersProps>) => {
-      state.banners = action.payload;
+      state.banners = [...action.payload];
     },
   },
 });

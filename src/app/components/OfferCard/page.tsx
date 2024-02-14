@@ -12,7 +12,6 @@ interface OfferProps {
 }
 
 const OfferCard = ({ name, datesShort, carouselImage }: OfferProps) => {
-  console.log(carouselImage.default);
   return (
     <div className={styles.menu}>
       <Image

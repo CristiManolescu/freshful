@@ -6,6 +6,7 @@ import menuSlice from "./menuSlice";
 import carouselSlice from "./carouselSlice";
 import offersSlice from "./offersSlice";
 import searchSlice from "./searchSlice";
+import productSlice from "./productSlice";
 
 export const store = configureStore({
   reducer: {
@@ -15,6 +16,7 @@ export const store = configureStore({
     carousel: carouselSlice,
     offer: offersSlice,
     search: searchSlice,
+    product: productSlice,
   },
 });
 

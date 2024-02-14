@@ -2,22 +2,23 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { HOMEPAGE_API } from "../utils/APIs";
-import { addOffer } from "../redux/offersSlice";
+import { addProduct, addProductTitle } from "../redux/productSlice";
 import { useAppSelector } from "../redux/store";
 
-const useOffers = () => {
+const useProducts = () => {
   const dispatch = useDispatch();
-  const offers = useAppSelector((store) => store.carousel.banners);
+  const products = useAppSelector((store) => store.product.products);
 
   useEffect(() => {
-    offers.length === 0 && fetchData();
+    products.length === 0 && fetchData();
   }, []);
 
   const fetchData = async () => {
     const data = await fetch(HOMEPAGE_API);
     const json = await data.json();
-    dispatch(addOffer(json.slots[2].promotions));
+    dispatch(addProductTitle(json.slots[3].title));
+    dispatch(addProduct(json.slots[3].products));
   };
 };
 
-export default useOffers;
+export default useProducts;

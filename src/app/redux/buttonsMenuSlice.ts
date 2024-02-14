@@ -20,7 +20,7 @@ const buttonsMenuSlice = createSlice({
   initialState,
   reducers: {
     addButtons: (state, action: PayloadAction<ButtonsProps>) => {
-      state.buttons = action.payload;
+      state.buttons = [...action.payload];
     },
   },
 });

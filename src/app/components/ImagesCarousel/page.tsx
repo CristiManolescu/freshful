@@ -11,7 +11,6 @@ import Image from "next/image";
 const ImagesCarousel = () => {
   useCarousel();
   const banners = useAppSelector((store) => store.carousel.banners);
-  // console.log(banners);
 
   return (
     <div className={styles.carousel}>
