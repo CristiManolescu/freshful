@@ -4,3 +4,6 @@ export const ANNOUNCEMENT_API =
 export const HOMEPAGE_API = "https://www.freshful.ro/api/v2/shop/homepage-web";
 
 export const CATEGORIES_API = "https://www.freshful.ro/api/web/categories";
+
+export const SEARCH_API =
+  "http://suggestqueries.google.com/complete/search?client=firefox&q=";

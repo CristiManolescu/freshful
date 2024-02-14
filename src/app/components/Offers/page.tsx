@@ -17,6 +17,7 @@ const Offers = () => {
       {offers.map((offer) => (
         <OfferCard key={offer.code} {...offer} />
       ))}
+      {/* <OfferCard {...offers[0]} /> */}
     </div>
   );
 };
