@@ -9,7 +9,6 @@ const Products = () => {
   useProducts();
   const products = useAppSelector((store) => store.product.products);
   const productsTitle = useAppSelector((store) => store.product.title);
-  console.log(products);
 
   if (products.length === 0) return null;
 

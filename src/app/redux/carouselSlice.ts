@@ -12,7 +12,6 @@ interface BannersProps {
   analyticsListId: string;
   analyticsListName: number;
 }
-[];
 
 interface BannerState {
   banners: BannersProps[];
@@ -24,7 +23,7 @@ const carouselSlice = createSlice({
   name: "carousel",
   initialState,
   reducers: {
-    addBanners: (state, action: PayloadAction<BannersProps>) => {
+    addBanners: (state, action: PayloadAction<BannersProps[]>) => {
       state.banners = [...action.payload];
     },
   },

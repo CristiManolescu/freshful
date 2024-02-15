@@ -8,8 +8,6 @@ interface OffersProps {
   datesShort: string;
   name: string;
 }
-[];
-
 interface OffersState {
   offers: OffersProps[];
 }
@@ -20,7 +18,7 @@ const offersSlice = createSlice({
   name: "offers",
   initialState,
   reducers: {
-    addOffer: (state, action: PayloadAction<OffersProps>) => {
+    addOffer: (state, action: PayloadAction<OffersProps[]>) => {
       state.offers = [...action.payload];
     },
   },

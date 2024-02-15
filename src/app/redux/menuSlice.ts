@@ -16,7 +16,6 @@ interface MenuProps {
   image: number;
   gridImage: string;
 }
-[];
 
 interface MenuState {
   menus: MenuProps[];
@@ -28,7 +27,7 @@ const menuSlice = createSlice({
   name: "menu",
   initialState,
   reducers: {
-    addMenus: (state, action: PayloadAction<MenuProps>) => {
+    addMenus: (state, action: PayloadAction<MenuProps[]>) => {
       state.menus = [...action.payload];
     },
   },

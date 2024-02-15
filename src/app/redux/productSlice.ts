@@ -28,7 +28,6 @@ interface ProductProps {
   };
   unitPriceLabel: string;
 }
-[];
 
 interface ProductState {
   products: ProductProps[];
@@ -41,7 +40,7 @@ const productSlice = createSlice({
   name: "menuButton",
   initialState,
   reducers: {
-    addProduct: (state, action: PayloadAction<ProductProps>) => {
+    addProduct: (state, action: PayloadAction<ProductProps[]>) => {
       state.products = [...action.payload];
     },
     addProductTitle: (state, action: PayloadAction<string>) => {
