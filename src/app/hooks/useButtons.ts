@@ -11,7 +11,7 @@ const useButtons = () => {
 
   useEffect(() => {
     buttons.length === 0 && fetchData();
-  }, []);
+  });
 
   const fetchData = async () => {
     const data = await fetch(HOMEPAGE_API);

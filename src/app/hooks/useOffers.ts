@@ -11,7 +11,7 @@ const useOffers = () => {
 
   useEffect(() => {
     offers.length === 0 && fetchData();
-  }, []);
+  });
 
   const fetchData = async () => {
     const data = await fetch(HOMEPAGE_API);

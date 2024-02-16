@@ -15,7 +15,7 @@ const useAnnounce = () => {
 
   useEffect(() => {
     announcement === "" && fetchData();
-  }, []);
+  });
 
   const fetchData = async () => {
     const data = await fetch(ANNOUNCEMENT_API);

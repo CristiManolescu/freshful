@@ -11,7 +11,7 @@ const useMenu = () => {
 
   useEffect(() => {
     menu.length === 0 && fetchData();
-  }, []);
+  });
 
   const fetchData = async () => {
     const data = await fetch(CATEGORIES_API);
